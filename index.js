@@ -1,6 +1,14 @@
 // index.js
 var m = require('mithril');
 
-var component = require('./component');
+var Kaali = require('./Kaali');
+var peruna = require('./Peruna');
 
-m.mount(document.body, component);
+var root = document.body;
+
+m.render(root, [
+  m('h1', 'Parsa'),
+  m('input', 'parsaInput'),
+  m(Kaali),
+  m(peruna),
+]);
